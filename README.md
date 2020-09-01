@@ -1,37 +1,8 @@
-Welcome to Glitch
-=================
+This program can detect musical notes to generate random abstract art.
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+Play any of the four Vivaldi's Four Seasons on the piano, and the program will listen for which season is being played and generate art based on that season.
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+To do this, we used ml5.js, which is a library for machine learning algorithms. Part of this library is an algorithm called pitch detection which can estimate the frequency or pitch of an audio signal. This allows us to use a pre-trained ml pitch detection model to distinguish musical notes. 
 
-Find out more [about Glitch](https://glitch.com/about).
+The machine is supported by the CREPE Model, a pitch tracker which is operated directly by waveform input. The CREPE model does support direct input from a browser microphone. Our project uses these models and our computer’s browser microphone to determine what actions should be taken when a certain note is played. 
 
-
-Your Project
-------------
-
-### ← README.md
-
-That's this file, where you can tell people what your cool website does and how you built it.
-
-### ← index.html
-
-Where you'll write the content of your website. 
-
-### ← style.css
-
-CSS files add styling rules to your content.
-
-### ← script.js
-
-If you're feeling fancy you can add interactivity to your site with JavaScript.
-
-### ← assets
-
-Drag in `assets`, like images or music, to add them to your project
-
-Made by [Glitch](https://glitch.com/)
--------------------
-
-\ ゜o゜)ノ
